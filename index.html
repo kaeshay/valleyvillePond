@@ -16,7 +16,10 @@
 	</style>
 </head>
 <body>
-	<img id="pond" ondblclick="changePond()" class="center" src="assets/pond-full.jpg">
+	<img id="pond" onclick="changePond()" class="center" src="assets/pond-full.jpg">
+	<audio class="mini-audio" controls autoplay>
+  		<source src="assets/joe.mp3" type="audio/mp3">
+	</audio> 
 	<div class="inventory">
 	</div>
 	<div class="avatars">
@@ -28,10 +31,10 @@
 	function changePond(){
 		pond = document.getElementById("pond");
 		if (counter==0){
-			pond.src="assets/pond-sparkle.jpg";
+			pond.src="assets/pond-ripple.jpg";
 			counter++;
 		} else if (counter==1){
-			pond.src="assets/pond-ripple.jpg";
+			pond.src="assets/pond-sparkle.jpg";
 			counter++
 		} else if (counter==2){
 			pond.src="assets/pond-dry.jpg";
